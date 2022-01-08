@@ -1,0 +1,23 @@
+import { Link } from "react-router-dom";
+
+export default function MealItem(props) {
+  const { strMeal, strMealThumb } = props;
+
+  return (
+    <div className="card">
+      <div className="card-image">
+        <img src={strMealThumb} alt={strMeal} />
+      </div>
+      <div className="card-content">
+        <h2 className="card-title">
+          <b>{strMeal}</b>
+        </h2>
+      </div>
+      <div className="card-action">
+        <Link to={`/category/${strMeal}`} className="btn">
+          Watch Recipe
+        </Link>
+      </div>
+    </div>
+  );
+}

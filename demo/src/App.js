@@ -5,7 +5,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
-import Movies from "./pages/Movies";
+import Category from "./pages/Category";
+import Recipe from "./pages/Recipe";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/About" component={About} />
           <Route path="/Contact" component={Contact} />
-          <Route path="/Movies/:id" component={Movies} />
+          <Route path="/category/:name" component={Category} />
+          <Route path="/meal/:id" component={Recipe} />
           <Route component={NotFound} />
         </Switch>
       </main>
