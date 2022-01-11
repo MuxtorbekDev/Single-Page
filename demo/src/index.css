@@ -30,3 +30,15 @@ nav {
 .card-content {
   flex-grow: 1;
 }
+img {
+  max-width: 100%;
+}
+.recipe img{
+border-radius: 2rem;}
+
+button.recipe {
+  margin: 2rem 0;
+}
+.mealList .btn {
+  margin: 2rem 0;
+}

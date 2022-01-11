@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 export default function MealItem(props) {
-  const { strMeal, strMealThumb } = props;
+  const { strMeal, strMealThumb, idMeal } = props;
 
   return (
     <div className="card">
@@ -14,7 +14,7 @@ export default function MealItem(props) {
         </h2>
       </div>
       <div className="card-action">
-        <Link to={`/category/${strMeal}`} className="btn">
+        <Link to={`/meal/${idMeal}`} className="btn">
           Watch Recipe
         </Link>
       </div>
